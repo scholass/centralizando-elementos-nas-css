@@ -1,0 +1,45 @@
+/*OPÇÃO 01*/
+#wrap-one {
+    width: 100%;
+	background: #069;
+} 
+#wrap-one .box {
+    margin: 0 auto;
+    width: 70%; /* Valor da largura desejada. */
+    background: #036;
+	color: #fff;
+	text-align: center;
+}
+/*OPÇÃO 02*/
+#wrap-two {
+	width: 100%;
+	height: 60px;
+	background: #069;
+    position: relative;
+	margin-bottom: 10px;
+} 
+#wrap-two .box {
+    left: 50%;
+    margin-left: -200px;  /* Sempre use a metade de sua largura total do elemento. */
+    position: absolute;
+    width: 400px;  /* O valor que você desejar para a largura do elemento. */
+	background: #036;
+	color: #fff;
+	text-align: center;
+}
+/*OPÇÃO 03 (RECOMENDADA)*/
+#wrap-three {
+	width: 100%;
+	background: #069;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center; /* centraliza horizontalmente */
+    justify-content: center; /* cetraliza verticalmente */
+} 
+#wrap-three .box {
+    width: 50%; /* Utilize a largura que quiser */
+	background: #036;
+	color: #fff;
+	text-align: center;
+}
