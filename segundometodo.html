@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Aprendendo 3 técnicas para centralizar elementos com CSS</title>
+        <style type="text/css">
+            #wrap {
+				width: 100%;
+				background: #069;
+				position: relative;
+			} 
+			#wrap .box {
+				left: 50%;
+				margin-left: -100px;  /* Sempre use a metade de sua largura total do elemento. */
+				position: absolute;
+				width: 200px;  /* O valor que você desejar para a largura do elemento. */
+				background: #036;
+				color: #fff;
+				text-align: center;
+			}       
+        </style>
+    </head>
+    <body>        
+        <div id="wrap">
+            <div class="box">
+                <p>Centralizando nas CSS como a segunda técnica</p>
+            </div>
+        </div>        
+    </body>
+</html>
